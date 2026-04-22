@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullmetal Alchemist - Anime Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #000000, #000000, #000000);
+      color: white;
+    }
+
+    .anime-page {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .anime-header {
+      display: flex;
+      gap: 25px;
+      background: rgba(134, 134, 134, 0.06);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgb(255, 0, 162);
+    }
+
+    .anime-header img {
+      width: 260px;
+      border-radius: 18px;
+    }
+
+    .anime-info h1 {
+      margin: 0;
+      font-size: 42px;
+      color: #ff4595;
+    }
+
+    .type {
+      color: #ff43a1;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .story {
+      line-height: 1.7;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    .fancy-button {
+      display: inline-block;
+      padding: 12px 26px;
+      background: #ff029e;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .fancy-button:hover {
+      transform: translateY(-3px);
+      background: #fd4092;
+    }
+
+    .section-title {
+      margin: 40px 0 20px;
+      color: #ff4595;
+    }
+
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .char-card {
+      background: rgba(76, 75, 75, 0.351);
+      border-radius: 16px;
+      padding: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .char-card:hover {
+      transform: scale(1.05);
+    }
+
+    .char-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .char-card h3 {
+      margin: 10px 0 0;
+      font-size: 15px;
+      color: #f46fc3;
+    }
+
+    .seasons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .season-card {
+      background: rgba(108, 108, 108, 0.278);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(77, 76, 76, 0.35);
+      transition: 0.3s ease;
+    }
+
+    .season-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .season-card h3 {
+      margin: 0;
+      color: #ff22b5;
+      font-size: 22px;
+    }
+
+    .season-info {
+      margin: 10px 0;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .episodes {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #f690c3;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="anime-page">
+
+    <div class="anime-header">
+      <img src="Edward Elric1.jpg" alt="Fullmetal Alchemist">
+
+      <div class="anime-info">
+        <h1>Fullmetal Alchemist</h1>
+        <p class="type">Action • Fantasy • Adventure • Shounen</p>
+
+        <p class="story">
+          Two brothers, Edward and Alphonse Elric, use alchemy in a desperate attempt to bring their mother back to life.
+          The failed ritual costs Edward an arm and a leg, and Alphonse his entire body. Now they search for the Philosopher’s Stone
+          to restore what they have lost.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Main Characters</h2>
+
+    <div class="characters">
+
+      <div class="char-card">
+        <img src="Edward Elric.jpg" height="290">
+        <h3>Edward Elric</h3>
+      </div>
+
+      <div class="char-card">
+        <img src="alphonse.jpg" height="290">
+        <h3>Alphonse Elric</h3>
+      </div>
+
+      <div class="char-card">
+        <img src="roy.jpg" height="290">
+        <h3>Roy Mustang</h3>
+      </div>
+
+      <div class="char-card">
+        <img src="winry.jpg" height="290">
+        <h3>Winry Rockbell</h3>
+      </div>
+
+    </div>
+
+    <h2 class="section-title">Seasons</h2>
+
+    <div class="seasons">
+
+      <div class="season-card">
+        <img src="Fullmetal Alchemist.jpg" width="500" height="250"><br>
+        <img src="Fullmetal Alchemist1.jpg" width="500" height="250">
+
+        <h3>Fullmetal Alchemist (Full Series)</h3>
+        <p class="season-info">
+          The complete story of the Elric brothers across all episodes.
+        </p>
+        <p class="episodes">Episodes: 64</p>
+        <a href="fma_episodes.html" class="fancy-button">Watch Episodes</a>
+      </div>
+
+      <div class="season-card">
+        <img src="Fullmetal Alchemist2.jpg" width="500" height="250"><br>
+        <img src="Fullmetal Alchemist3.jpg" width="500" height="250">
+
+        <h3>Fullmetal Alchemist Movies</h3>
+        <p class="season-info">
+          Epic movies expanding the story and battles.
+        </p>
+        <p class="episodes">Movies: 3</p>
+        <a href="fma_movies.html" class="fancy-button">Watch Movies</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

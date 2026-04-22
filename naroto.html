@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naruto - Anime Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #000000, #000000, #000000);
+      color: white;
+    }
+
+    .anime-page {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .anime-header {
+      display: flex;
+      gap: 25px;
+      background: rgba(134, 134, 134, 0.06);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 25px  rgb(255, 0, 162);
+    }
+
+    .anime-header img {
+      width: 260px; 
+      border-radius: 18px;
+    }
+
+    .anime-info h1 {
+      margin: 0;
+      font-size: 42px;
+      color: #ff4595;
+    }
+
+    .type {
+      color: #ff43a1;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .story {
+      line-height: 1.7;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    .fancy-button {
+      display: inline-block;
+      padding: 12px 26px;
+      background: #ff029e;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .fancy-button:hover {
+      transform: translateY(-3px);
+      background: #fd4092;
+    }
+
+    .section-title {
+      margin: 40px 0 20px;
+      color: #ff4595;
+    }
+
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .char-card {
+      background: rgba(76, 75, 75, 0.351);
+      border-radius: 16px;
+      padding: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .char-card:hover {
+      transform: scale(1.05);
+    }
+
+    .char-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .char-card h3 {
+      margin: 10px 0 0;
+      font-size: 15px;
+      color: #f46fc3;
+    }
+
+    .seasons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .season-card {
+      background: rgba(108, 108, 108, 0.278);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(77, 76, 76, 0.35);
+      transition: 0.3s ease;
+    }
+
+    .season-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .season-card h3 {
+      margin: 0;
+      color: #ff22b5;
+      font-size: 22px;
+    }
+
+    .season-info {
+      margin: 10px 0;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .episodes {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #f690c3;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="anime-page">
+
+    <div class="anime-header">
+      <img src="200.jpg" alt="Naruto">
+
+      <div class="anime-info">
+        <h1>Naruto</h1>
+        <p class="type">Action • Adventure • Fantasy • Shounen</p>
+
+        <p class="story">
+          Naruto Uzumaki is a young ninja who dreams of becoming the strongest ninja 
+          and earning the title of Hokage, the leader of his village. Along his journey, 
+          he faces powerful enemies, builds strong friendships, and discovers his true destiny.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Main Characters</h2>
+
+    <div class="characters">
+
+      <div class="char-card">
+        <img src="208.jpg" height="290">
+        <h3>Naruto Uzumaki</h3>
+        
+      </div>
+
+      <div class="char-card">
+        <img src="209.jpg"height="290">
+        <h3>Sasuke Uchiha</h3>
+      </div>
+
+      <div class="char-card">
+        <img src="210.jpg"height="290">
+        <h3>Sakura Haruno</h3>
+      </div>
+
+      <div class="char-card">
+        <img src="211.jpg"height="290">
+        <h3>Kakashi Hatake</h3>
+      </div>
+
+    </div>
+
+    <h2 class="section-title">Seasons</h2>
+
+    <div class="seasons">
+
+      <div class="season-card">
+        <img src="203.jpg" width="315" height="250" alt="Naruto"><br>
+        <img src="205..jpg" width="315" height="250" alt="Naruto">
+
+        <h3>Naruto (Classic)</h3>
+        <p class="season-info">
+          The original story of Naruto Uzumaki, following his childhood journey 
+          as he trains to become a ninja and achieve his dream of becoming Hokage.
+        </p>
+        <p class="episodes">Episodes: 220</p>
+        <a href="http://127.0.0.1:5501/naruto/naruto_220-4.html" class="fancy-button">Watch Episodes</a>
+      </div>
+
+      <div class="season-card">
+        <img src="202.jpg" width="315" height="250" alt="Naruto"><br>
+        <img src="213.jpg" width="315" height="250" alt="Naruto">
+
+        <h3>Naruto Shippuden</h3>
+        <p class="season-info">
+          Continues Naruto's story after time skip, featuring intense battles, 
+          emotional moments, and the greatest ninja war.
+
+        </p>
+        <p class="episodes">Episodes: 500</p>
+        <a href="http://127.0.0.1:5501/naruto%20shippoden/shippoden.html" class="fancy-button">Watch Episodes</a>
+      </div>
+
+
+      
+      <div class="season-card">
+        <img src="204.jpg" width="315" height="250" alt="Naruto"><br>
+        <img src="212.jpg" width="315" height="250" alt="Naruto">
+
+        <h3>Naruto Movies</h3>
+        <p class="season-info">
+     naruto has many Movies that is filler but very interisting
+
+
+        </p>
+        <p class="episodes">10 Movies</p>
+        <a href="file:///C:/Users/Dr.Ohood/Desktop/anime/shippoden.html" class="fancy-button">Watch Movies</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
